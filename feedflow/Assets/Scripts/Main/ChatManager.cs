@@ -81,7 +81,7 @@ namespace Base
             backButton.onClick.AddListener(Back);
 
             // 채팅 히스토리 불러오기
-            StartCoroutine(GetChatHistory());
+            //StartCoroutine(GetChatHistory());
         }
 
         private void Update()
@@ -273,7 +273,7 @@ namespace Base
                     // 라인별 공백 제거 및 줄바꿈 삭제
                     for (int i = 0; i < responseLines.Length; i++)
                     {
-                        responseLines[i] = responseLines[i].Trim(); // 각 줄의 공백 제거
+                        //responseLines[i] = responseLines[i].Trim(); // 각 줄의 공백 제거
                     }
 
                     // 결합하고 *를 공백으로 대체

@@ -14,7 +14,7 @@ namespace Base
         [SerializeField] private GameObject feedPaenl;
         [SerializeField] private GameObject chatPanel;
         [SerializeField] private GameObject issuePanel;
-        [SerializeField] private GameObject eventPanel;
+        [SerializeField] private GameObject tagPanel;
         [SerializeField] private GameObject notifyPaenl;
         [SerializeField] private GameObject myPanel;
 
@@ -50,6 +50,34 @@ namespace Base
         public void DisableIssuePanel()
         {
             issuePanel.SetActive(false);
+        }
+
+        public void EnableTagPanel()
+        {
+            tagPanel.SetActive(true);
+        }
+
+        public void DisableTagPanel()
+        {
+            tagPanel.SetActive(false);
+        }
+
+        public void EnableNotiPanel()
+        {
+            notifyPaenl.SetActive(true);
+        }
+
+        public void DisableNotiPanel()
+        {
+            notifyPaenl.SetActive(false);
+        }
+
+        public void EnableFeedPanel()
+        {
+            issuePanel.SetActive(false);
+            tagPanel.SetActive(false);
+            notifyPaenl.SetActive(false);
+            chatPanel.SetActive(false);
         }
     }
 }
